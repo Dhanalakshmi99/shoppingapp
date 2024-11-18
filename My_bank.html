@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title> RedStore | Ecommerce Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?
+    family=Poppins:wght@200;300;400;500;600;700&display=swap" 
+    rel="stylesheet">
+    
+     <script>
+	 body
+	 {
+	 margin: 0;
+	 padding:0;
+	 height:100vh;
+	 overflow:hidden;
+	 }
+	 
+	 .center form{
+	 padding:0 40px;
+	 box-sizing:border-box;
+	 }
+	 
+	 form .txt_field
+	 {
+	 position:relative;
+	 border-bottom:2px solid #adadad;
+	 margin:30px 0;
+	 }
+	 
+	 .txt_field input{
+	 width:100%;
+	 padding:0 5px;
+	 height:40px;
+	 font-size:16px;
+	 border:none;
+	 background: none;
+	 outline: none;
+	 }
+	 .txt_field label
+	 {position:absolute;
+	 top: 50%;
+	 left: 5px;
+	 color:#adadad;
+	 transform: translateY(-50%);
+	 font-size:16px;
+	 pointer-events:none;
+	 transition:.5s;
+	 }
+	 .txt_field span::before{
+	 content:'';
+	 position:absolute;
+	 top: 40px;
+	 left:0;
+	 width:100%;
+	 height:2px;
+	 background:#2691d9;
+	 transittion: .5s;
+	 }
+	 
+	</script>	 
+ </head>
+    <body>
+      
+
+        <div class="header">
+
+        
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logo.png" width="125px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Cart</a></li>
+                        <li><a href="account.html">Account</a></li>
+                        <li><a href="products1.html">Products</a></li>
+    
+                    </ul>
+                </nav>
+			</div>    
+		</div>	
+		<div class=center>
+		<form method="post">
+		<div class="txt_field">
+		<input type="text" required>
+		<spam></spam>
+		<label>Account Number</label>
+		</div>	
+		<div class="txt_field">
+		<input type="password" required>
+		<spam></spam>
+		<label>Confirm Account Number</label>
+		</div>
+		<div class="txt_field">
+		<input type="text" required>
+		<spam></spam>
+		<label>Account Holder's Name</label>
+		</div>
+		<div class="txt_field">
+		<input type="text" required>
+		<spam></spam>
+		<label>IFSC Code</label>
+		</div>
+		
+		<input type="submit" value="SUBMIT" onclick="myFunction()" ><br><br><br>
+<!--<button onclick="myFunction()" type="submit" value="SUBMIT">SUBMIT</button>-->
+
+
+
+<script>
+function myFunction() {
+alert("ACCOUNT INFORMATION SUBMITTED");
+}
+</script>
+
+
+
+</div>
+<!--------------footer----------------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo-white.png">
+                <p>Our purpose Is To Sustainbly make the Pleasure and 
+                    Benefits of sports Accessible to the Many.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful links</h3>
+                <ul>
+                    <li> Coupons</li>
+                    <li> Blog post</li>
+                    <li> Return Policy</li>
+                    <li> Join Affiliate</li>
+
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li> Facebook</li>
+                    <li> Twitter</li>
+                    <li> Instagram</li>
+                    <li> Youtube</li>
+
+                </ul>
+            </div>
+            
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2020 -Easy Tutorials</p>
+    </div>
+</div>
+<!-------------js for toggle menu------------>
+<script>
+    var MenuItems =document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        } 
+        else{
+            MenuItems.style.maxHeight = "0px";
+        }   
+        }
+</script>
+</body>
+    
+</html>
